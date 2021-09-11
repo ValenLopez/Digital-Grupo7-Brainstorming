@@ -1,0 +1,22 @@
+{
+  "name": "digital-grupo7-brainstorming",
+  "version": "1.0.0",
+  "description": "Objetivo",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ValenLopez/Digital-Grupo7-Brainstorming.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ValenLopez/Digital-Grupo7-Brainstorming/issues"
+  },
+  "homepage": "https://github.com/ValenLopez/Digital-Grupo7-Brainstorming#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
