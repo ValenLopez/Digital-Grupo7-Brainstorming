@@ -35,7 +35,14 @@ Modelo de Negocios
 
 •	La monetización deseable, será por intermedio del club de afinidad. Este abono margina mucho mas que la venta neta del vino, y en los sabores mas altos, permite la combinación con comida, proporcionando una mejor experiencia al usuario y permitiendo así un auto de margen.
 
-•	Construcción de mediano plazo. Con la información recabada de los usuarios, se permitirá que una red de emprendedores gastronómicos, puedan ofrecer sus propios productos a los socios, siempre ajustados a sus gustos, y estándares de calidad. Está red debería escalar, para que todos los emprendedores, puedan ampliar sus clientes, con los clientes de los asociados al poll de emprendedores
+•	Construcción de mediano plazo. Con la información recabada de los usuarios, se permitirá que una red de emprendedores gastronómicos, puedan ofrecer sus propios productos a los socios, siempre ajustados a sus gustos, y estándares de calidad. Está red debería escalar, para que todos los emprendedores, puedan ampliar sus clientes, con los clientes de los asociados al poll de emprendedores.
+
+Paginas de Refencia:
+- https://www.dvino.com.ar/
+- https://www.varietalvinoteca.com.ar/
+- https://frappe.com.ar/
+- http://www.debarricas.com.ar/
+- https://www.vinotecacampos.com.ar/whiskys/importados1/
 
 Integrantes del proyecto : 
 
