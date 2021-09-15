@@ -12,5 +12,50 @@
 
 body {
     font-family: 'Bebas Neue', cursive;
+}
 
+/*==================================================
+    Tipografía
+==================================================*/
+
+@font-face {
+    font-family: 'Bebas Neue';
+    font-style: regular;
+    src: url('/fonts/BebasNeue-Regular.ttf');
+}
+
+/*==================================================
+    Cuerpo del Detalle
+==================================================*/
+
+.detalle {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 80%;
+    border: 1px solid red;
+    margin: auto;
+}
+
+.detalle_titulo_box {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.detalle_titulo_box h1 {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 29px;
+}
+
+.detalle_titulo_boton {
+    margin: auto;
+    margin-right: 0;
+    background-color: pink;
+    padding: 10px 20px;
+}
+
+.detalle_titulo_box i {
+    margin-left: 5px;
 }
