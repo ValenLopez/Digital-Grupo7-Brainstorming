@@ -21,6 +21,9 @@ app.set('views engine', 'html')
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '/views/index.html'));
 });
+app.get('/detalleProducto', (req, res) => {
+    res.sendFile(path.join(__dirname, '/views/detalleProducto.html'));
+});
 
 
 
