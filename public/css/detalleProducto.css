@@ -106,7 +106,17 @@ a.detalle_titulo_boton{
 
 .producto_imagen img{
     width: 100%;
-    padding: 10px;
+    /* padding: 10px; */
+}
+
+.producto_imagen:before {
+    content: "PROMOCIÓN";
+    background: #000000;
+    color: #FFFFFF;
+    padding: 5px 20px;
+    position: absolute;
+    top: 70px;
+    font-size: 0.75rem;
 }
 
 /*==================================================
@@ -120,6 +130,78 @@ a.detalle_titulo_boton{
 
 .producto_descripcion_cantidad {
     border: 1px solid yellow;
+    height: 40px;
+}
+
+.producto_descripcion_cantidad_precio {
+    width: 120px;
+    margin: auto;
+    margin-left: 5px;
+    border: 1px solid violet;
+}
+
+.producto_descripcion_cantidad {
+    display: flex;
+    justify-content: space-between;
+}
+
+.producto_descripcion_cantidad_input {
+    width: 50px;
+    height: 40px;
+    border: 1px solid green;
+    display: flex;
+    margin: auto;
+}
+
+.producto_descripcion_cantidad_input input{
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    margin-left: 0;
+    margin-right: 2px;
+    border: 0;
+    text-align: right;
+}
+
+.producto_descripcion_detalle_botones {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-left: 2px;
+    width: 20px;
+    border: 1px solid brown;
+}
+
+.producto_descripcion_detalle_botones button {
+    width: 15px;
+    height: 15px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: #ffffff;
+    color: #525252;
+    cursor: pointer;
+}
+
+.producto_descripcion_detalle_botones button:hover {
+    color: #B5A37D;
+}
+
+.producto_descripcion_detalle_icono {
+    display: flex;
+    width: 100px;
+    text-align: right;
+    margin: auto;
+    margin-right: 0;
+}
+.producto_descripcion_detalle_delivery {
+    width: 50px;
+    margin: auto;
+    border: 1px solid red;
+}
+
+.producto_descripcion_detalle_delivery_2 {
+    display: none;
 }
 
 /*==================================================
@@ -136,7 +218,8 @@ a.detalle_titulo_boton{
     PUNTOS DE QUIEBRES
 ==================================================*/
 
-@media (min-width: 481px) and (max-width: 768px){
+/*  TABLET  */
+@media (min-width: 481px) and (max-width: 767px){
 
     /*  TITULOS  */
     .detalle_titulo_box h1{
@@ -146,15 +229,17 @@ a.detalle_titulo_boton{
         font-size: 25px;
     }
 
-    /*  CANTIDAD Y DESCRIPCION  */
+    /*  IMAGEN  */
 
-    .producto_descripcion {
-        display: flex;
-        flex-wrap: wrap;
+    .producto_imagen:before {
+        top: 100px;
+        font-size: 1rem;
     }
+
 }
 
-@media (min-width: 769px) and (max-width: 1279px){
+/*  LAPTOP  */
+@media (min-width: 768px) and (max-width: 1278px){
     
     /*  TITULOS  */
     .detalle_titulo_box h1{
@@ -163,14 +248,52 @@ a.detalle_titulo_boton{
         max-width: 65%;
         font-size: 29px;
     }
+
+    /*  IMAGEN  */
+
+    .producto_imagen:before {
+        top: 100px;
+        font-size: 1.5rem;
+    }
+
+
+    /*  CANTIDAD Y DESCRIPCION  */
+
+    .producto_descripcion {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .producto_descripcion_cantidad {
+        width: 50%;
+    }
+
+    .producto_descripcion_detalle {
+        width: 50%
+    }
 }
 
-@media (min-width: 1280px) {
+/*  TV  */
+@media (min-width: 1279px) {
 
     /*  TITULOS  */
     .detalle_titulo_box h1 {
         display: block;
         margin: 0;
         font-size: 29px;
+    }
+
+    /*  IMAGEN  */
+
+    .producto_imagen:before {
+        top: 100px;
+        font-size: 1.6rem;
+    }
+
+    /*  CANTIDAD Y DESCRIPCION  */
+
+    .producto_descripcion {
+        display: flex;
+        flex-wrap: wrap;
     }
 }
