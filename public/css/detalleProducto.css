@@ -32,9 +32,12 @@ body {
     display: flex;
     flex-wrap: wrap;
     max-width: 80%;
-    border: 1px solid red;
     margin: auto;
 }
+
+/*==================================================
+    Titulo del producto
+==================================================*/
 
 .detalle_titulo_box {
     display: flex;
@@ -43,19 +46,131 @@ body {
 }
 
 .detalle_titulo_box h1 {
+    display: none;
+    margin: 0;
+    color: #B5A37D;
     font-family: 'Bebas Neue';
     font-style: normal;
     font-weight: normal;
     font-size: 29px;
 }
 
+.detalle_titulo_box a {
+    text-decoration: none;
+    color:#B5A37D;
+    cursor: pointer;
+}
+
 .detalle_titulo_boton {
     margin: auto;
     margin-right: 0;
-    background-color: pink;
+    font-size: 20px;
     padding: 10px 20px;
+}
+
+a.detalle_titulo_boton{
+    color: #000000;
+    transition: all 600ms;
+}
+
+.detalle_titulo_boton:hover {
+    background-color: #B5A37D;
+    color: #FFFFFF;
 }
 
 .detalle_titulo_box i {
     margin-left: 5px;
+}
+
+/*==================================================
+    Caja imagen y descripcion
+==================================================*/
+
+.producto {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-width: 80%;
+    margin: auto;
+    border: 1px solid red;
+}
+
+/*==================================================
+    IMAGEN
+==================================================*/
+
+.producto_imagen {
+    max-width: 100%;
+    border: 1px solid blue;
+}
+
+.producto_imagen img{
+    width: 100%;
+    padding: 10px;
+}
+
+/*==================================================
+    CANTIDAD
+==================================================*/
+
+.producto_descripcion {
+    max-width: 100%;
+    border: 1px solid green;
+}
+
+.producto_descripcion_cantidad {
+    border: 1px solid yellow;
+}
+
+/*==================================================
+    DETALLE
+==================================================*/
+
+.producto_descripcion_detalle {
+    border: 1px solid brown;
+}
+
+
+
+/*==================================================
+    PUNTOS DE QUIEBRES
+==================================================*/
+
+@media (min-width: 481px) and (max-width: 768px){
+
+    /*  TITULOS  */
+    .detalle_titulo_box h1{
+        display: block;
+        margin: 0;
+        max-width: 65%;
+        font-size: 25px;
+    }
+
+    /*  CANTIDAD Y DESCRIPCION  */
+
+    .producto_descripcion {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1279px){
+    
+    /*  TITULOS  */
+    .detalle_titulo_box h1{
+        display: block;
+        margin: 0;
+        max-width: 65%;
+        font-size: 29px;
+    }
+}
+
+@media (min-width: 1280px) {
+
+    /*  TITULOS  */
+    .detalle_titulo_box h1 {
+        display: block;
+        margin: 0;
+        font-size: 29px;
+    }
 }
