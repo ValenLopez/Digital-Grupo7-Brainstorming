@@ -21,7 +21,7 @@
     
     <div class="detalle">
         <div class="detalle_titulo_box">
-            <h1 class="detalle_titulo"> <a href="">PRODUCTOS</a> | <a href="">VINOS</a> | <strong>ADUENTUS CABERNET FRANC - 2do AL 70%</strong></h1>
+            <h1 class="detalle_titulo"> <a href="">PRODUCTOS</a> | <a href="">VINOS</a> | <span>ADUENTUS CABERNET FRANC - 2do AL 70%</span></h1>
             <a class="detalle_titulo_boton" href="">VOLVER A PRODUCTOS <i class="fas fa-th-large"></i></a>
         </div>
     </div>
@@ -31,42 +31,107 @@
     ===================================================-->
     
     <div class="producto">
-
         <!-- Imagen -->
         <div class="producto_imagen">
             <img src="img/Aduentus.cabFrankPromo.jpg" alt="">
         </div>
-
-        <!-- Descripcion y cantidad -->
-        <div class="producto_descripcion">
-
-            <!-- Cantidad -->
-            <div class="producto_descripcion_cantidad">
-                <div class="producto_descripcion_cantidad_precio">
-                    PROMO $3900
-                </div>
-                <div class="producto_descripcion_cantidad_input">
-                    <input type="text" value="1">
-                    <div class="producto_descripcion_detalle_botones">
-                        <button type="button"><i class="fas fa-chevron-up"></i></button>
-                        <button type="button"><i class="fas fa-chevron-down"></i></button>
-                    </div>
-                </div>
-                <div class="producto_descripcion_detalle_icono">
-                    <div class="producto_descripcion_detalle_delivery">
-                        <span class="producto_descripcion_detalle_delivery_1">delivery</span>
-                        <span class="producto_descripcion_detalle_delivery_2">delivery disponible en caba y zonas gba</span>
-                    </div>
-                    <img src="img/icon_bike.png" alt="" >
-                </div> 
-            </div>
-            <!-- Fin Cantidad -->
-
-            <!-- Detalle -->
-            <div class="producto_descripcion_detalle">
-                <h2>juan</h2>
+        <!-- Título producto solo movil -->
+        <div class="producto_titulo_movil">
+            <div class="producto_titulo_box">
+                <h5 class="producto_titulo">ADUENTUS CABERNET FRANC - 2do AL 70%</h5>
             </div>
         </div>
+        <!-- Descripcion y cantidad -->
+        <div class="producto_descripcion">
+            <!-- Cantidad -->
+            <div class="producto_descripcion_cantidad">
+                <div class="producto_descripcion_cantidad_box">
+
+                    <div class="producto_descripcion_cantidad_precio">
+                        <h4>PROMO $ 3900</h4>
+                    </div>
+                    <div class="producto_descripcion_cantidad_input">
+                        <input type="text" value="1">
+                        <div class="producto_descripcion_detalle_botones">
+                            <button type="button"><i class="fas fa-chevron-up"></i></button>
+                            <button type="button"><i class="fas fa-chevron-down"></i></button>
+                        </div>
+                    </div>
+                    <div class="producto_descripcion_detalle_icono">
+                        <div class="producto_descripcion_detalle_delivery">
+                            <h5 class="producto_descripcion_detalle_delivery_1">delivery</h5>
+                            <h5 class="producto_descripcion_detalle_delivery_2">delivery disponible en caba y zonas gba</h5>
+                        </div>
+                        <img src="img/icon_bike.png" alt="" >
+                    </div>
+
+                </div>
+                <!-- Boton de carrito -->
+                <div class="producto_descripcion_detalle_carrito">
+                    <button type="button">
+                        <span>agregar a la bolsa de pedidos</span> 
+                        <i class="fas fa-shopping-bag"></i>
+                    </button>
+                </div>
+                <!-- Fin Boton de carrito -->
+            </div>
+            <!-- Fin Cantidad -->
+            <!-- Detalle -->
+            <div class="producto_descripcion_detalle">
+                <h3>DETALLES</h3>
+                <hr>
+                <div class="producto_detalle_desc">
+                    <p>
+                        <span style="color: rgb(82, 82, 82); letter-spacing: 1px; font-family: sans-serif; font-size: 14px;">Beber con moderación. Prohibida su venta a menores de 18 años.</span>
+                        <br>
+                    </p>
+                </div>
+                <div class="producto_descripcion_lista">
+                    <div class="producto_descripcion_lista_red">
+                        <ul>
+                            <li><h5 class="producto_descripcion_lista_text">COMPARTIR</h5></li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <i class="fab fa-twitter fa-fw"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <i class="fab fa-facebook fa-fw"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <i class="fab fa-pinterest fa-fw"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                        <i class="fab fa-linkedin fa-fw"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-envelope fa-fw"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <!--==================================================
+        Productos Relacionados
+    ===================================================-->
+    <div class="producto_relacionado">
+        <div class="producto_relacionado_icono">
+            <i class="fas fa-chevron-circle-down"></i>
+        </div>
     </div>
+    <div class="productos_relacionados_titulo">
+        <h2>PRODUCTOS RELACIONADOS</h2>
+    </div>
+    
 </body>
 </html>
