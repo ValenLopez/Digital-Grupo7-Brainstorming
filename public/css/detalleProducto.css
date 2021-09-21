@@ -218,6 +218,7 @@ a.detalle_titulo_boton{
     margin: auto;
     margin-right: 0;
 }
+
 .producto_descripcion_detalle_delivery {
     width: 50px;
     margin: auto;
@@ -315,10 +316,6 @@ a.detalle_titulo_boton{
     PRODUCTOS RELACIONADOS
 ==================================================*/
 
-.producto_relacionado {
-    border: 1px solid black;
-}
-
 .producto_relacionado_icono {
     width: 10%;
     height: 10%;
@@ -329,6 +326,210 @@ a.detalle_titulo_boton{
 .producto_relacionado_icono i {
     font-size: 20px;
 }
+
+.productos_relacionados_titulo {
+    margin-bottom: 20px;
+}
+
+.productos_relacionados_titulo h2 {
+    color: #B5A37D;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+/*==================================================
+    PRODUCTOS RELACIONADOS CAROUSEL
+==================================================*/
+
+.container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container ul {
+    list-style: none;
+}
+
+.container a {
+    text-decoration: none;
+}
+.box {
+    width: 350px;
+    height: 570px;
+    background-color: #1e1e26;
+    border-radius: 10px;
+    box-shadow: 2px 10px 12px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 10px;
+}
+
+.box img {
+    object-fit: cover;
+}
+
+.box:hover {
+    background-color: #17171d;
+    transform-style: preserve-3d;
+    transform: scale(1.02);
+    transition: all ease 0.3s;
+}
+
+.box:hover .marvel {
+    color: #fff;
+    transition: all ease 0.5s;
+}
+
+.model {
+    width: 350px;
+    max-width: 100%;
+    height: 400px;
+    max-height: 100%;
+}
+
+.marvel {
+    color: #B5A37D;
+    letter-spacing: 2px;
+    
+}
+
+/* CAROUSEL */
+
+.producto_descripcion_cantidad_box2 {
+    display: flex;
+    border-bottom: 2px solid #B5A37D;
+    border-top: 2px solid #B5A37D;
+}
+
+.producto_descripcion_cantidad_precio2 {
+    width: 120px;
+    height: 25px;
+    margin: auto;
+    margin-left: 5px;
+    /* border: 1px solid violet; */
+    border-right: 2px solid #B5A37D;
+}
+
+.producto_descripcion_cantidad_precio2 h4 {
+    color: #635030;
+    margin: 0;
+    margin-top: 2px;
+}
+
+.producto_descripcion_cantidad_input2 {
+    width: 50px;
+    height: 40px;
+    /* border: 1px solid green; */
+    display: flex;
+    margin: auto;
+}
+
+.producto_descripcion_cantidad_input2 input{
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    margin-left: 0;
+    margin-right: 2px;
+    border: 0;
+    text-align: right;
+    background-color: #1e1e26;
+}
+
+.box:hover .producto_descripcion_cantidad_input2 input {
+    background-color: #17171d;
+}
+
+.producto_descripcion_detalle_botones2 {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-left: 2px;
+    width: 20px;
+    /* border: 1px solid brown; */
+}
+
+.producto_descripcion_detalle_botones2 button {
+    width: 15px;
+    height: 15px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: #1e1e26;
+    color: #525252;
+    cursor: pointer;
+}
+
+.box:hover .producto_descripcion_detalle_botones2 button {
+    background-color: #17171d;
+}
+
+.producto_descripcion_detalle_icono2 {
+    display: flex;
+    width: 100px;
+    text-align: right;
+    margin: auto;
+    margin-right: 0;
+}
+
+
+
+
+
+
+.producto_descripcion_detalle_delivery2 {
+    width: 50px;
+    margin: auto;
+    /* border: 1px solid red; */
+}
+
+.producto_descripcion_detalle_delivery2 h5 {
+    margin: 0;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: normal;
+    height: 10px;
+}
+
+.producto_descripcion_detalle_delivery_22 {
+    display: none;
+    height: 40px;
+}
+
+.producto_descripcion_detalle_carrito2 {
+    margin: 10px 0;
+    /* border: 1px solid purple; */
+}
+
+.producto_descripcion_detalle_carrito2 span {
+    margin-right: 5px;
+}
+
+.producto_descripcion_detalle_carrito2 button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    background: #B5A37D;
+    color: #FFFFFF;
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+
+
 
 /*==================================================
     PUNTOS DE QUIEBRES
