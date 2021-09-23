@@ -46,7 +46,7 @@ Paginas de Refencia:
 
 Integrantes del proyecto : 
 
-- López Valentina
-- Morrone Pablo
+- López Valentina : Estudiante programación web
+- Morrone Pablo : Técnico electrónico
 - Olmo Agustina
 - Ronderos Gonzalo
