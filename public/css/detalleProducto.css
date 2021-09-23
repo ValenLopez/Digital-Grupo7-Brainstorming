@@ -48,7 +48,7 @@ body {
 .detalle_titulo_box h1 {
     display: none;
     margin: 0;
-    color: #B5A37D;
+    color: #B56576;
     font-family: 'Bebas Neue';
     font-style: normal;
     font-weight: normal;
@@ -57,7 +57,7 @@ body {
 
 .detalle_titulo_box a {
     text-decoration: none;
-    color:#B5A37D;
+    color:#6D597A;
     cursor: pointer;
 }
 
