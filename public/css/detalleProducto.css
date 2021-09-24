@@ -48,7 +48,7 @@ body {
 .detalle_titulo_box h1 {
     display: none;
     margin: 0;
-    color: #B56576;
+    color: var(--tinto);
     font-family: 'Bebas Neue';
     font-style: normal;
     font-weight: normal;
@@ -57,7 +57,7 @@ body {
 
 .detalle_titulo_box a {
     text-decoration: none;
-    color:#6D597A;
+    color: var(--tinto);
     cursor: pointer;
 }
 
@@ -74,7 +74,7 @@ a.detalle_titulo_boton{
 }
 
 .detalle_titulo_boton:hover {
-    background-color: #B5A37D;
+    background-color: var(--tinto);
     color: #FFFFFF;
 }
 
@@ -140,13 +140,13 @@ a.detalle_titulo_boton{
     flex-direction: column;
     /* border: 1px solid yellow; */
     max-height: 100%;
-    border-top: 2px solid #B5A37D;
+    border-top: 2px solid var(--tinto);
     /* border-bottom: 2px solid #B5A37D; */
 }
 
 .producto_descripcion_cantidad_box {
     display: flex;
-    border-bottom: 2px solid #B5A37D;
+    border-bottom: 2px solid var(--tinto);
 }
 
 .producto_descripcion_cantidad_precio {
