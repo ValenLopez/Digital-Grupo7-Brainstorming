@@ -22,6 +22,7 @@
 
 body {
     font-family: 'Bebas Neue', cursive;
+    margin: 0;
 }
 
 /*==================================================
@@ -33,6 +34,7 @@ body {
     flex-wrap: wrap;
     max-width: 80%;
     margin: auto;
+    margin-top: 40px;
 }
 
 /*==================================================
@@ -116,7 +118,7 @@ a.detalle_titulo_boton{
     color: #FFFFFF;
     padding: 5px 20px;
     position: absolute;
-    top: 70px;
+    top: 110px;
     font-size: 0.75rem;
 }
 
@@ -155,7 +157,7 @@ a.detalle_titulo_boton{
     margin: auto;
     margin-left: 5px;
     /* border: 1px solid violet; */
-    border-right: 2px solid #B5A37D;
+    border-right: 2px solid var(--tinto);
 }
 
 .producto_descripcion_cantidad_precio h4 {
@@ -208,7 +210,7 @@ a.detalle_titulo_boton{
 }
 
 .producto_descripcion_detalle_botones button:hover {
-    color: #B5A37D;
+    color: var(--tinto);
 }
 
 .producto_descripcion_detalle_icono {
@@ -251,8 +253,8 @@ a.detalle_titulo_boton{
     width: 100%;
     height: 40px;
     border: none;
-    background: #B5A37D;
-    color: #FFFFFF;
+    background: var(--tinto);
+    color: var(--blanco);
     font-family: 'Bebas Neue';
     font-style: normal;
     font-weight: 500;
@@ -309,7 +311,7 @@ a.detalle_titulo_boton{
 
 .producto_descripcion_lista ul li a {
     text-decoration: none;
-    color: #B5A37D;
+    color: var(--tinto);
 }
 
 /*==================================================
@@ -332,7 +334,7 @@ a.detalle_titulo_boton{
 }
 
 .productos_relacionados_titulo h2 {
-    color: #B5A37D;
+    color: var(--tinto);
     text-align: center;
     font-style: normal;
     font-weight: normal;
@@ -348,7 +350,7 @@ a.detalle_titulo_boton{
     padding: 0;
     width: 100%;
     height: 100vh;
-    background-color: #fff;
+    background-color: var(--blanco);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -386,7 +388,7 @@ a.detalle_titulo_boton{
 }
 
 .box:hover .marvel {
-    color: #fff;
+    color: var(--blanco);
     transition: all ease 0.5s;
 }
 
@@ -398,7 +400,7 @@ a.detalle_titulo_boton{
 }
 
 .marvel {
-    color: #B5A37D;
+    color: var(--beige);
     letter-spacing: 2px;
     
 }
@@ -407,8 +409,8 @@ a.detalle_titulo_boton{
 
 .producto_descripcion_cantidad_box2 {
     display: flex;
-    border-bottom: 2px solid #B5A37D;
-    border-top: 2px solid #B5A37D;
+    border-bottom: 2px solid var(--beige);
+    border-top: 2px solid var(--beige);
 }
 
 .producto_descripcion_cantidad_precio2 {
@@ -417,7 +419,7 @@ a.detalle_titulo_boton{
     margin: auto;
     margin-left: 5px;
     /* border: 1px solid violet; */
-    border-right: 2px solid #B5A37D;
+    border-right: 2px solid var(--beige);
 }
 
 .producto_descripcion_cantidad_precio2 h4 {
@@ -513,8 +515,8 @@ a.detalle_titulo_boton{
     width: 100%;
     height: 40px;
     border: none;
-    background: #B5A37D;
-    color: #FFFFFF;
+    background: var(--beige);
+    color: var(--blanco);
     font-family: 'Bebas Neue';
     font-style: normal;
     font-weight: 500;
@@ -530,23 +532,23 @@ a.detalle_titulo_boton{
 .producto_barra {
     margin-top: 80px;
     height: 30px;
-    background-color: #B5A37D;
+    background-color: var(--beige);
 }
 
 .producto_barra hr {
-    border: 2px solid #000;
+    border: 2px solid var(--negro);
 }
 
 .producto_pedido {
     /* margin-top: 40px; */
-    background-color: #B5A37D;
+    background-color: var(--beige);
     height: 40px;
 }
 
 .producto_pedido_icono {
     width: 25px;
     height: 25px;
-    background-color: #000;
+    background-color: var(--negro);
     display: flex;
     justify-content: center;
     border-radius: 50%;
@@ -556,13 +558,13 @@ a.detalle_titulo_boton{
 .producto_pedido_icono i {
     text-align: center;
     justify-content: center;
-    font-size: 16   px;
+    font-size: 16px;
     margin-top: 5px;
-    color: #fff;
+    color: var(--blanco);
 }
 
 .pedido {
-    background-color: #B5A37D;
+    background-color: var(--beige);
 }
 
 .pedido .pedido_titulo h2 {
@@ -747,6 +749,7 @@ footer {
   
 .right2 form .btn2 button:hover {
     background: #000; 
+    color: #fff;
 }
   
 .bottom2 center {
@@ -828,7 +831,7 @@ footer {
     /*  IMAGEN  */
 
     .producto_imagen:before {
-        top: 100px;
+        top: 140px;
         font-size: 1rem;
     }
 
@@ -955,7 +958,7 @@ footer {
     /*  IMAGEN  */
 
     .producto_imagen:before {
-        top: 120px;
+        top: 140px;
         font-size: 1rem;
     }
 
@@ -1078,7 +1081,7 @@ footer {
     /*  IMAGEN  */
 
     .producto_imagen:before {
-        top: 140px;
+        top: 180px;
         font-size: 1.2rem;
     }
 
@@ -1094,12 +1097,12 @@ footer {
         padding-top: 10px;
         width: 100%;
         max-height: 100%;
-        border-top: 3px solid #B5A37D;
+        border-top: 3px solid var(--tinto);
     }
 
     .producto_descripcion_cantidad_box {
         padding-bottom: 10px;
-        border-bottom: 3px solid #B5A37D;
+        border-bottom: 3px solid var(--tinto);
     }
 
     .producto_descripcion_detalle {
@@ -1139,7 +1142,7 @@ footer {
         width: 100px;
         height: 30px;
         font-size: 16px;
-        border-right: 3px solid #B5A37D;
+        border-right: 3px solid var(--tinto);
     }
 
     .producto_descripcion_lista ul {
