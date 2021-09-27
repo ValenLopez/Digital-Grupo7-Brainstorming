@@ -48,5 +48,5 @@ Integrantes del proyecto :
 
 - López Valentina : Estudiante programación web
 - Morrone Pablo : Técnico electrónico
-- Olmo Agustina
-- Ronderos Gonzalo
+- Olmo Agustina : Lic. Administracion de Empresas
+- Ronderos Gonzalo : Logistica Maritima y Comercio Internacional
