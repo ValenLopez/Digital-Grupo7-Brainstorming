@@ -1,80 +1,243 @@
-* {box-sizing: border-box; margin: 0; padding: 0;font-family: 'Bebas Neue'; max-width: 1348px;}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Bebas Neue";
+  max-width: 1348px;
+}
 
 /*==================HEADER==================*/
 
 /*==================MAIN==================*/
-main .container1 {display: flex;justify-content: space-between;height: 40px;margin-bottom: 20px;}
-main .container1 h2, h3 {margin: 0;}
+main .container1 {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  margin-bottom: 20px;
+}
+main .container1 h2,
+h3 {
+  margin: 0;
+}
 
-main .title-order {display: flex;align-items: center;}
+main .title-order {
+  display: flex;
+  align-items: center;
+}
 
-main .title-cart {display: flex;align-items: center;}
+main .title-cart {
+  display: flex;
+  align-items: center;
+}
 
-main .btn-buy {display: flex;}
+main .btn-buy {
+  display: flex;
+}
 
-main .container2 {display: flex;height: 200px;width: 90%;margin-bottom: 20px;border: 1px solid black;}
+main .container2 {
+  display: flex;
+  height: 200px;
+  width: 90%;
+  margin-bottom: 20px;
+  border: 1px solid black;
+}
 
-main .container2 .image {display: flex;width: 20%;border: 1px solid green;}
-main .container2 .description {display: flex; border: 1px solid red;}
-main .container2 .description .title {display: flex;margin-left: 20px;border: 1px solid blue;}
-main .container2 .description .detail {width: 50%; border: 1px solid pink;}
-main .container2 .priceperunit {display: flex;border: 1px solid black;}
-main .container2 .quantity {display: flex;border: 1px solid grey;}
-main .container2 .finalprice {display: flex;border: 1px solid orange;}
-main .container2 .trash {display: flex;border: 1px solid yellow;}
-
-
-
-
-
-
-
+main .container2 .image {
+  display: flex;
+  width: 20%;
+  border: 1px solid green;
+}
+main .container2 .description {
+  display: flex;
+  border: 1px solid red;
+}
+main .container2 .description .title {
+  display: flex;
+  margin-left: 20px;
+  border: 1px solid blue;
+}
+main .container2 .description .detail {
+  width: 50%;
+  border: 1px solid pink;
+}
+main .container2 .priceperunit {
+  display: flex;
+  border: 1px solid black;
+}
+main .container2 .quantity {
+  display: flex;
+  border: 1px solid grey;
+}
+main .container2 .finalprice {
+  display: flex;
+  border: 1px solid orange;
+}
+main .container2 .trash {
+  display: flex;
+  border: 1px solid yellow;
+}
 
 /*==================FOOTER==================*/
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
 
-footer {bottom: 0px;width: 100%;background: #111;font-family: 'Poppins', sans-serif;margin-top: 40px;}
-  
-.main-content2 {color: #d9d9d9;display: flex;}
-.main-content2 .box2 {flex-basis: 50%;padding: 10px 20px;}
-.main-content2 .box2 h2 {font-size: 1.125rem;font-weight: 600;text-transform: uppercase;}
-.main-content2 .box2 .content2 {margin: 20px 0 0 0;position: relative;}
-  
-.box2 .content2:before {position: absolute;content: '';top: -10px;height: 2px;width: 100%;background: #1a1a1a;}
-.box2 .content2:after {position: absolute;content: '';height: 2px;width: 15%;background: #f12020;top: -10px;}
+footer {
+  bottom: 0px;
+  width: 100%;
+  background: #111;
+  font-family: "Poppins", sans-serif;
+  margin-top: 40px;
+}
 
-.left2 .content2 p {text-align: justify;}
-.left2 .content2 .social2 {margin: 20px 0 0 0;}
-.left2 .content2 .social2 a {padding: 0 2px;text-decoration: none;color: #d9d9d9;}
-.left2 .content2 .social2 a span {height: 40px;width: 40px;background: #1a1a1a;line-height: 40px;text-align: center;
-    font-size: 18px;border-radius: 5px;transition: 0.3s;}
-.left2 .content2 .social2 a span:hover {background: #f12020;}
-  
-.center2 .content2 .text2 {font-size: 1.0625rem;font-weight: 500;padding-left: 10px;}
-.center2 .content2 .fa {font-size: 1.4375rem;background: #1a1a1a;height: 45px;width: 45px;line-height: 45px;
-    text-align: center;border-radius: 50%;transition: 0.3s;cursor: pointer;}
-.center2 .content2 .fa:hover {background: #f12020;}
-.center2 .content2 .phone2 {margin: 10px 0;}
-  
-.right2 form .text2 {font-size: 1.0625rem;margin-bottom: 2px;color: #656565;}
-.right2 form .msg2 {margin-top: 10px;}
-.right2 form input, .right2 form textarea {width: 100%;font-size: 1.0625rem;background: #151515;padding-left: 10px;
-    border: 1px solid #222222;}
+.main-content2 {
+  color: #d9d9d9;
+  display: flex;
+}
+.main-content2 .box2 {
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+.main-content2 .box2 h2 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.main-content2 .box2 .content2 {
+  margin: 20px 0 0 0;
+  position: relative;
+}
+
+.box2 .content2:before {
+  position: absolute;
+  content: "";
+  top: -10px;
+  height: 2px;
+  width: 100%;
+  background: #1a1a1a;
+}
+.box2 .content2:after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 15%;
+  background: #f12020;
+  top: -10px;
+}
+
+.left2 .content2 p {
+  text-align: justify;
+}
+.left2 .content2 .social2 {
+  margin: 20px 0 0 0;
+}
+.left2 .content2 .social2 a {
+  padding: 0 2px;
+  text-decoration: none;
+  color: #d9d9d9;
+}
+.left2 .content2 .social2 a span {
+  height: 40px;
+  width: 40px;
+  background: #1a1a1a;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.left2 .content2 .social2 a span:hover {
+  background: #f12020;
+}
+
+.center2 .content2 .text2 {
+  font-size: 1.0625rem;
+  font-weight: 500;
+  padding-left: 10px;
+}
+.center2 .content2 .fa {
+  font-size: 1.4375rem;
+  background: #1a1a1a;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.center2 .content2 .fa:hover {
+  background: #f12020;
+}
+.center2 .content2 .phone2 {
+  margin: 10px 0;
+}
+
+.right2 form .text2 {
+  font-size: 1.0625rem;
+  margin-bottom: 2px;
+  color: #656565;
+}
+.right2 form .msg2 {
+  margin-top: 10px;
+}
+.right2 form input,
+.right2 form textarea {
+  width: 100%;
+  font-size: 1.0625rem;
+  background: #151515;
+  padding-left: 10px;
+  border: 1px solid #222222;
+}
 .right2 form input:focus,
-.right2 form textarea:focus {outline-color: #3498db;}
-.right2 form input {height: 35px;}
-.right2 form .btn2 {margin-top: 10px;}
-.right2 form .btn2 button {height: 40px;width: 100%;border: none;outline: none;background: #f12020;
-    font-size: 1.0625rem;font-weight: 500;cursor: pointer;transition: 0.3s;}
-.right2 form .btn2 button:hover {background: #000;}
+.right2 form textarea:focus {
+  outline-color: #3498db;
+}
+.right2 form input {
+  height: 35px;
+}
+.right2 form .btn2 {
+  margin-top: 10px;
+}
+.right2 form .btn2 button {
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #f12020;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.right2 form .btn2 button:hover {
+  background: #000;
+}
 
-.bottom2 center {padding: 5px;font-size: 0.9375rem;background: #151515;}
-.bottom2 center span {color: #656565;}
-.bottom2 center a {color: #f12020;text-decoration: none;}
-.bottom2 center a:hover {text-decoration: underline;}
-  
+.bottom2 center {
+  padding: 5px;
+  font-size: 0.9375rem;
+  background: #151515;
+}
+.bottom2 center span {
+  color: #656565;
+}
+.bottom2 center a {
+  color: #f12020;
+  text-decoration: none;
+}
+.bottom2 center a:hover {
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 767px) {
-footer {position: relative;bottom: 0px;}
-.main-content2 {flex-wrap: wrap;flex-direction: column;}
-.main-content2 .box2 {margin: 5px 0;} 
+  footer {
+    position: relative;
+    bottom: 0px;
+  }
+  .main-content2 {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .main-content2 .box2 {
+    margin: 5px 0;
+  }
 }
