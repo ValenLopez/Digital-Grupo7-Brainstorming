@@ -43,11 +43,9 @@ body {
 
 .container-title h1 {
     font-size: 34px;
+    font-style: normal;
+    font-weight: normal;
     color: var(--rosado);
-}
-
-.container-title h2{
-    display: none;
 }
 
 
@@ -89,60 +87,6 @@ body {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
 
-.form-group select {
-    width: 100%;
-    height: 40px;
-    padding: 7.15px 15px;
-    font-family: 'Bebas Neue';
-    font-size: 1.25rem;
-    font-style: normal;
-    font-weight: normal;
-    margin-bottom: 15px;
-    color: #555555;
-    border: 2px solid var(--rosado);
-}
-
-.form-group select option {
-    /* font-size: 1.25rem; */
-    font-style: normal;
-    font-weight: normal;
-    color: #555555;
-}
-
-.form-group select:focus {
-    font-style: normal;
-    font-weight: normal;
-    outline: none;
-    border: 2px solid var(--rosado);
-    border-top: 3px solid var(--rosado);
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
-}
-
-.form-group p {
-    font-family: sans-serif;
-    font-size: 10px;
-    color: var(--grisClaro);
-    margin-bottom: 15px;
-}
-
-.form-group h4 {
-    font-style: normal;
-    font-weight: normal;
-    color: var(--rosado);
-    margin-bottom: 14px;
-}
-
-.field-street {
-    display: flex;
-    flex-direction: column;
-    /* border: 1px solid cyan; */
-}
-
-.field-place {
-    display: flex;
-    flex-direction: column;
-    /* border: 1px solid rgb(24, 9, 92); */
-}
 
 /* SECTOR DE CONTRASEÑAS */
 
@@ -152,11 +96,6 @@ body {
     border-top: 1px solid var(--grisClaro);
 }
 
-.pass-container {
-    display: flex;
-    flex-direction: column;
-}
-
 .button-container {
     display: flex;
     height: 40px;
@@ -164,12 +103,12 @@ body {
     justify-content: flex-end;
 }
 
-.button-register {
+.button-login {
     width: 40%;
     /* border: 1px solid purple; */
 }
 
-.button-register button {
+.button-login button {
     width: 100%;
     height: 100%;
     font-family: 'Bebas Neue';
@@ -456,7 +395,6 @@ footer {
 
 }
 
-
 /*==================================================
     PUNTOS DE QUIEBRES
 ==================================================*/
@@ -467,104 +405,14 @@ footer {
 
 @media (min-width: 481px) {
 
-    .form-register {
-        display: flex;
-        width: 100%;
-    }
-
     /* CONTENEDOR TITULO */
     .container-form {
         width: 80%;
     }
 
-    .form-register {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .container-title h2{
-        display: block;
-        font-size: 28px;
-        font-style: normal;
-        font-weight: normal;
-        color: var(--rosado);
-    }
-
     .form-container {
         width: 100%;
         /* border: 2px solid #B5A37D; */
-    }
-
-    .field-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        /* border: 2px solid #b37b03; */
-    }
-
-    .fieldA-container {
-        width: 48%;
-        /* border: 1px solid yellow; */
-    }
-
-    .fieldB-container {
-        width: 48%;
-        /* border: 1px solid pink; */
-    }
-
-    .container-title {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        /* border: 1px solid blue; */
-    }
-
-    .field-street {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        /* border: 1px solid cyan; */
-    }
-
-    .street {
-        width: 60%;
-    }
-
-    .numbers {
-        width: 30%;
-    }
-
-    .field-place {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        /* border: 1px solid rgb(24, 9, 92); */
-    }
-
-    .floor {
-        width: 29%;
-    }
-
-    .department {
-        width: 29%;
-    }
-
-    .code {
-        width: 29%;
-    }
-
-    .pass-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .password {
-        width: 48%;
-    }
-
-    .repeatPass {
-        width: 48%;
     }
 
 }

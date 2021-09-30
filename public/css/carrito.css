@@ -1,80 +1,632 @@
-* {box-sizing: border-box; margin: 0; padding: 0;font-family: 'Bebas Neue'; max-width: 1348px;}
+/*==================================================
+    Tipografía
+==================================================*/
 
-/*==================HEADER==================*/
+@font-face {
+    font-family: 'Bebas Neue';
+    font-style: regular;
+    src: url('/fonts/BebasNeue-Regular.ttf');
+}
 
-/*==================MAIN==================*/
-main .container1 {display: flex;justify-content: space-between;height: 40px;margin-bottom: 20px;}
-main .container1 h2, h3 {margin: 0;}
+/*==================================================
+    Estilo Global
+==================================================*/
 
-main .title-order {display: flex;align-items: center;}
+* {
+    box-sizing: border-box;
+}
 
-main .title-cart {display: flex;align-items: center;}
+/*==================================================
+    Estilo del Body
+==================================================*/
 
-main .btn-buy {display: flex;}
+body {
+    font-family: 'Bebas Neue', cursive;
+    margin: 0;
+}
 
-main .container2 {display: flex;height: 200px;width: 90%;margin-bottom: 20px;border: 1px solid black;}
+a {
+    text-decoration: none;
+    color: var(--grisMedio);
+    font-size: 29px;
+    margin: 10px;
+}
 
-main .container2 .image {display: flex;width: 20%;border: 1px solid green;}
-main .container2 .description {display: flex; border: 1px solid red;}
-main .container2 .description .title {display: flex;margin-left: 20px;border: 1px solid blue;}
-main .container2 .description .detail {width: 50%; border: 1px solid pink;}
-main .container2 .priceperunit {display: flex;border: 1px solid black;}
-main .container2 .quantity {display: flex;border: 1px solid grey;}
-main .container2 .finalprice {display: flex;border: 1px solid orange;}
-main .container2 .trash {display: flex;border: 1px solid yellow;}
+h1 {
+    margin: 0;
+    font-size: 39px;
+    color: var(--tinto);
+}
+
+h2 {
+    margin: 0;
+    font-size: 29px;
+    color: var(--tinto);
+}
+
+h3 {
+    margin: 0;
+    color: var(--tinto);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+span {
+    font-family: sans-serif;
+    font-size: 14px;
+    color: var(--grisMedio);
+}
+
+/*==================================================
+    Encabezado del carrito
+==================================================*/
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    margin: 0 15px;
+    margin-top: 50px;
+    justify-content: space-between;
+    /* align-items: center; */
+    /* border: 2px solid black; */
+}
+
+.order {
+    width: 100%;
+    /* border: 1px solid pink; */
+}
+
+.cart {
+    display: none;
+}
+
+.header-button {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* border: 1px solid blue; */
+    justify-content: flex-end;
+}
+
+.header-button button {
+    width: 70%;
+    height: 48px;
+    font-size: 17px;
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: normal;
+}
+
+/*** CAMBIO COLOR A BOTÓN GROW BOX ***/
+.ov-btn-grow-spin {
+    color: var(--tinto) !important; /* color de fuente */
+    border: 2px solid var(--tinto) !important; /* tamaño y color de borde */
+}
+
+.ov-btn-grow-spin:hover {
+    color: var(--blanco) !important;/* color de fuente hover */
+}
+
+.ov-btn-grow-spin::after {
+    background: var(--tinto) !important; /* color de fondo hover */
+}
+
+/*==================================================
+    ITEM DEL CARRITO
+==================================================*/
+
+.item-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px;
+    margin-top: 50px;
+    border-top: 1px dashed var(--tinto);
+    border-bottom: 1px dashed var(--tinto);
+}
+
+.item-image {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+    height: 150px;
+    /* border: 1px solid violet; */
+    padding: 5px;
+}
+
+.item-image img {
+    object-fit: cover;
+}
+
+.item-description {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    /* border: 1px solid red; */
+    border-top: 1px dashed var(--tinto);
+    border-bottom: 1px dashed var(--tinto);
+}
+
+.description-title {
+    margin-top: 5px;
+    /* border: 1px solid orange; */
+}
+
+.description-title h3 {
+    margin: 5px;
+}
+
+.description-content {
+    margin-top: 5px;
+    /* border: 1px solid green; */
+}
+
+.description-content .description {
+    margin: 5px;
+}
+
+.item-price {
+    margin-bottom: 5px;
+    /* border: 1px solid brown; */
+    /* border-top: 1px dashed var(--tinto); */
+    border-bottom: 1px dashed var(--tinto);
+}
+
+.item-price span {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    margin: 5px;
+}
+
+.price {
+    margin-bottom: 5px;
+}
+
+.item-quantity {
+    margin-bottom: 5px;
+    /* border: 1px solid purple; */
+    border-bottom: 1px dashed var(--tinto);
+}
+
+.item-quantity span {
+    margin: 5px;
+}
+
+.quantity {
+    margin-bottom: 5px;
+}
+
+.item-subTotal {
+    margin-bottom: 5px;
+    /* border: 1px solid rgb(0, 65, 109); */
+    border-bottom: 1px dashed var(--tinto);
+}
+
+.item-subTotal h3 {
+    margin: 5px;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.item-delete {
+    margin-bottom: 5px;
+    /* border: 1px solid rgb(85, 109, 0); */
+    background-color: #f9f9f9;
+}
+
+.delete {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: #f9f9f9;
+    height: 45px;
+}
+
+/*==================================================
+    TOOLTIP PARA ICONO ELIMINAR ITEM
+==================================================*/
+
+.item-delete {
+    position: relative
+}
+
+.avatar {
+    transition: all .5s ease-in-out;
+}
+
+.avatar::before,
+.avatar::after {
+    --scale: 0;
+    --arrow-size: 10px;
+    --tooltip-color: var(--tinto);
+    --translate-y: -290%;
+
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%) translateY(var(--translate-y, 0)) scale(var(--scale)) ;
+    transition: 150ms transform;
+    transform-origin: bottom center;
+}
+.avatar::before {
+    --translate-y: -260%;
+
+    content: attr(data-tooltip);
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: .3rem;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    width: max-content;
+    max-width: 100%;
+    background: var(--tooltip-color);
+}
+
+.avatar:hover {
+    color: var(--tinto);
+}
+
+.avatar:hover::before,
+.avatar:hover::after {
+    --scale: 1;
+}
+
+.avatar::after {
+    content: '';
+    border: var(--arrow-size) solid transparent;
+    border-top-color: var(--tooltip-color);
+}
+
+/*==================================================
+    TOTAL DEL CARRITO
+==================================================*/
+
+.total-container {
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    margin: 0 15px;
+    margin-top: 10px;
+    justify-content: space-between;
+    /* align-items: center; */
+    /* border: 2px solid black; */
+}
+
+.container-box-text {
+    width: 100%;
+    /* margin-top: 5px; */
+    border-bottom: 1px dashed var(--tinto);
+    /* border: 1px solid violet; */
+}
+
+.box-text {
+    width: 98%;
+    margin: 5px 0;
+    margin-left: 5px;
+}
+
+.container-box-total {
+    width: 100%;
+    /* border-bottom: 1px dashed var(--tinto); */
+}
+
+.box-total {
+    width: 98%;
+    margin: 5px 0;
+    margin-left: 5px;
+}
+
+.container-box-clear {
+    display: none;
+    /* border: 1px solid red; */
+}
+
+/*==================================================
+    BOTONES DE CONFIRMACION
+==================================================*/
+
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    margin: 0 15px;
+    /* margin-top: 10px; */
+    margin-bottom: 60px;
+    justify-content: space-between;
+    /* align-items: center; */
+    border-top: 2px solid #ccc;    
+}
+
+.button-product {
+    margin-top: 10px;
+    height: 50px;
+    /* border: 1px solid blue; */
+}
+.button-product button {
+    width: 100%;
+    height: 48px;
+    font-size: 17px;
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: normal;
+}
+
+.button-buy {
+    margin-top: 10px;
+    height: 50px;
+    /* border: 1px solid orange; */
+}
+
+.button-buy button {
+    width: 100%;
+    height: 48px;
+    font-size: 17px;
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: normal;
+}
+
+/*** CAMBIO COLOR A BOTÓN GROW BOX ***/
+.ov-btn-grow-box {
+    background: #fff !important; /* color de fondo */
+    color: var(--tinto) !important; /* color de fuente */
+    border: 2px solid var(--tinto) !important; /* tamaño y color de borde */
+}
+.ov-btn-grow-box:hover {
+    color: #fff !important;/* color de fuente hover */
+}
+.ov-btn-grow-box::after {
+    background: var(--tinto) !important; /* color de fondo hover */
+}
+
+/*** CAMBIO COLOR A BOTÓN SLIDE CLOSE ***/
+.ov-btn-slide-close {
+    background: #fff !important; /* color de fondo */
+    color: var(--tinto) !important; /* color de fuente */
+    border: 2px solid var(--tinto) !important; /* tamaño y color de borde */
+}
+.ov-btn-slide-close:before, .ov-btn-slide-close:after {
+    background-color: var(--tinto) !important; /* color de fondo hover */
+
+}
+.ov-btn-slide-close:hover {
+    color: #fff !important; /* color de fuente hover */
+}
 
 
 
+/*==================================================
+    PUNTOS DE QUIEBRES
+==================================================*/
 
+/*==================================================
+    TABLET
+==================================================*/
 
+@media (min-width: 768px){
 
+    /*  ENCABEZADO  */
 
+    .header-container {
+        flex-direction: row;
+        justify-content:space-between;
+        width: 740px;
+        margin: auto;
+        margin-top: 40px;
+    }
 
-/*==================FOOTER==================*/
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+    .order {
+        width: 30%;
+    }
 
-footer {bottom: 0px;width: 100%;background: #111;font-family: 'Poppins', sans-serif;margin-top: 40px;}
-  
-.main-content2 {color: #d9d9d9;display: flex;}
-.main-content2 .box2 {flex-basis: 50%;padding: 10px 20px;}
-.main-content2 .box2 h2 {font-size: 1.125rem;font-weight: 600;text-transform: uppercase;}
-.main-content2 .box2 .content2 {margin: 20px 0 0 0;position: relative;}
-  
-.box2 .content2:before {position: absolute;content: '';top: -10px;height: 2px;width: 100%;background: #1a1a1a;}
-.box2 .content2:after {position: absolute;content: '';height: 2px;width: 15%;background: #f12020;top: -10px;}
+    .cart {
+        display: block;
+        width: 35%;
+        /* border: 1px solid yellow; */
+        text-align: center;
+        margin: auto;
+    }
 
-.left2 .content2 p {text-align: justify;}
-.left2 .content2 .social2 {margin: 20px 0 0 0;}
-.left2 .content2 .social2 a {padding: 0 2px;text-decoration: none;color: #d9d9d9;}
-.left2 .content2 .social2 a span {height: 40px;width: 40px;background: #1a1a1a;line-height: 40px;text-align: center;
-    font-size: 18px;border-radius: 5px;transition: 0.3s;}
-.left2 .content2 .social2 a span:hover {background: #f12020;}
-  
-.center2 .content2 .text2 {font-size: 1.0625rem;font-weight: 500;padding-left: 10px;}
-.center2 .content2 .fa {font-size: 1.4375rem;background: #1a1a1a;height: 45px;width: 45px;line-height: 45px;
-    text-align: center;border-radius: 50%;transition: 0.3s;cursor: pointer;}
-.center2 .content2 .fa:hover {background: #f12020;}
-.center2 .content2 .phone2 {margin: 10px 0;}
-  
-.right2 form .text2 {font-size: 1.0625rem;margin-bottom: 2px;color: #656565;}
-.right2 form .msg2 {margin-top: 10px;}
-.right2 form input, .right2 form textarea {width: 100%;font-size: 1.0625rem;background: #151515;padding-left: 10px;
-    border: 1px solid #222222;}
-.right2 form input:focus,
-.right2 form textarea:focus {outline-color: #3498db;}
-.right2 form input {height: 35px;}
-.right2 form .btn2 {margin-top: 10px;}
-.right2 form .btn2 button {height: 40px;width: 100%;border: none;outline: none;background: #f12020;
-    font-size: 1.0625rem;font-weight: 500;cursor: pointer;transition: 0.3s;}
-.right2 form .btn2 button:hover {background: #000;}
+    .header-button {
+        width: 35%;
+    }
 
-.bottom2 center {padding: 5px;font-size: 0.9375rem;background: #151515;}
-.bottom2 center span {color: #656565;}
-.bottom2 center a {color: #f12020;text-decoration: none;}
-.bottom2 center a:hover {text-decoration: underline;}
-  
-@media screen and (max-width: 767px) {
-footer {position: relative;bottom: 0px;}
-.main-content2 {flex-wrap: wrap;flex-direction: column;}
-.main-content2 .box2 {margin: 5px 0;} 
+    .header-button button {
+        width: 100%;
+    }
+
+    /* ITEM CARRITO */
+
+    .item-container {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 740px;
+        margin: auto;
+        margin-top: 40px;
+    }
+
+    .item-image {
+        width: 200px;
+    }
+
+    .item-description {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 200px;
+        height: 150px;
+        border-top: none;
+        border-bottom: none;
+    }
+
+    .description-title {
+        margin-top: 10px;
+    }
+
+    .description-content {
+        margin-bottom: 10px;
+    }
+
+    .item-price {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 5px;
+        height: 150px;
+        border-bottom: none;
+    }
+
+    .price {
+        margin-bottom: 0;
+    }
+
+    .item-quantity {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 5px;
+        height: 150px;
+        border-bottom: none;
+    }
+
+    .quantity {
+        margin-bottom: 0;
+    }
+
+    .item-subTotal {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 5px;
+        height: 150px;
+        border-bottom: none;
+    }
+
+    .item-delete {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 5px;
+        height: 150px;
+    }
+
+    /* TOOLTIP BORRAR ITEMS */
+
+    .avatar::before,
+    .avatar::after {
+        --translate-y: -20%;
+        transform: translateX(-50%) translateY(var(--translate-y, 0)) scale(var(--scale)) ;
+        transition: 150ms transform;
+        transform-origin: bottom center;
+    }
+    .avatar::before {
+        --translate-y: -100%;
+    }
+
+    /* TOTAL CARITO */
+
+    .total-container {
+        display: flex;
+        flex-direction: row;
+        /* justify-content:space-between; */
+        width: 740px;
+        margin: auto;
+        margin-top: 5px;
+    }
+
+    .container-box-text {
+        margin-top: 0;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-bottom: none;
+    }
+
+    .box-text {
+        text-align: right;
+        /* border: 1px solid grey; */
+    }
+
+    .container-box-total {
+        width: 14%;
+    }
+
+    .container-box-clear {
+        display: block;
+        width: 6%;
+    }
+
+    .buttons-container {
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        width: 740px;
+        margin: auto;
+        margin-top: 5px;
+    }
+
+    .container-button {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+}
+
+/*==================================================
+    LAPTOP  
+==================================================*/
+
+@media (min-width: 1024px){
+
+    /*  ENCABEZADO  */
+
+    .header-container {
+        width: 840px;
+    }
+
+    /* ITEM CARRITO */
+
+    .item-container {
+        width: 840px;
+    }
+
+    .item-description {
+        width: 40%;
+    }
+
+    .description-title {
+        margin-top: 20px;
+    }
+
+    .description-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 100%;
+    }
+
+    .description {
+        height: 60%;   
+    }
+
+    /* TOTAL CARITO */
+
+    .total-container {
+        width: 840px;
+    }
+
+    /* CONTENIDO DE BOTONES CONFIRMACION */
+
+    .buttons-container {
+        width: 840px;
+    }
+
 }
