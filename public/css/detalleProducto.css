@@ -25,6 +25,85 @@ body {
     margin: 0;
 }
 
+/* ------ HEADER ------ */
+.contact-header,
+.main-navbar {
+  display: none;
+}
+.main-header {
+  padding: 10px;
+  width: 100%;
+  height: 80px;
+  background-image: url("/img/wall/wall-violeta-2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.container-top-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+ul li {
+  list-style: none;
+}
+/* .logo {
+  width: 70px;
+  display: none;
+} */
+.logo-client {
+  margin-right: 10px;
+  font-size: 20px;
+  letter-spacing: 0.7px;
+  color: var(--blanco);
+}
+.logo-client i {
+  margin-right: 5px;
+  font-size: 20px;
+  margin-left: 25px;
+}
+.logo-bag i {
+  font-size: 25px;
+  color: var(--blanco);
+}
+.container-burger {
+  width: 0;
+}
+.container-burger i {
+  font-size: 28px;
+  color: var(--blanco);
+}
+
+/* ------ SECCION FILTROS ------ */
+.section-selections {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+.section-selections button,
+.section-selections input {
+  background-color: transparent;
+  color: #000000;
+  border: 2px solid #000000;
+  padding: 5px 16px;
+}
+.section-selections div,
+.section-selections form {
+  margin-top: 15px;
+  font-size: 20px;
+}
+.filter button,
+.category button {
+  width: 85vw;
+  position: relative;
+}
+.filter i,
+.category i {
+  position: absolute;
+  right: 20px;
+}
+
 /*==================================================
     Cuerpo del Detalle
 ==================================================*/
@@ -112,7 +191,7 @@ a.detalle_titulo_boton{
     /* padding: 10px; */
 }
 
-.producto_imagen:before {
+/* .producto_imagen:before {
     content: "PROMOCIÓN";
     background: #000000;
     color: #FFFFFF;
@@ -120,7 +199,7 @@ a.detalle_titulo_boton{
     position: absolute;
     top: 110px;
     font-size: 0.75rem;
-}
+} */
 
 /*==================================================
     CANTIDAD
@@ -596,196 +675,109 @@ a.detalle_titulo_boton{
 }
 
 
-/*================================================
-FOOTER
-================================================*/
-
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
-
-footer {
-    bottom: 0px;
-    width: 100%;
-    background: #111;
-    font-family: 'Poppins', sans-serif;
-    /* margin-top: 40px; */
-}
+/* -------------MEDIA QUERIES------------- */
+/* Tablets */
+@media (min-width: 768px) {
+    /* ------ HEADER ------ */
+    .main-header {
+      height: 110px;
+      padding: 15px 10px;
+    }
+    .container-burger {
+      display: none;
+    }
+    .main-header a {
+      color: var(--blanco);
+    }
+    .container-top-header {
+      display: flex;
+      justify-content: space-between;
+      margin: 0;
+      padding: 0 20px;
+    }
+    .contact-header,
+    .main-navbar {
+      display: flex;
+    }
+    #whatsapp {
+      font-size: 21px;
+      margin-right: 30px;
+  }
+    .contact-header i {
+      font-size: 21px;
+      margin-right: 15px;
+    }
+    .social {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .social li {
+      margin-right: 10px;
+    }
+    .logo-client{
+      margin-right: 20px;
+    }
+    .logo-client i {
+      margin-right: 10px;
+      font-size: 22px;
+    }
+    .logo-bag {
+      margin-right: 12px;
+    }
+    .main-navbar {
+      justify-content: space-between;
+      padding-top: 25px;
+    }
+    .main-navbar a {
+      font-size: 18px;
+      margin: 0 20px;
+    }
+    .left-navbar,
+    .right-navbar {
+      display: flex;
+      justify-content: space-around;
+    }
   
-.main-content2 {
-    color: #d9d9d9;
-    display: flex; 
-}
-
-.main-content2 .box2 {
-    flex-basis: 50%;
-    padding: 10px 20px; 
-}
-
-.main-content2 .box2 h2 {
-    font-size: 1.125rem;
-    font-weight: 600;
-    text-transform: uppercase; 
-}
-
-.main-content2 .box2 .content2 {
-    margin: 20px 0 0 0;
-    position: relative; 
-}
-  
-.box2 .content2:before {
-    position: absolute;
-    content: '';
-    top: -10px;
-    height: 2px;
-    width: 100%;
-    background: #1a1a1a; 
-}
-  
-.box2 .content2:after {
-    position: absolute;
-    content: '';
-    height: 2px;
-    width: 15%;
-    background: #f12020;
-    top: -10px; 
-}
-  
-.left2 .content2 p {
-    text-align: justify; 
-}
-  
-.left2 .content2 .social2 {
-    margin: 20px 0 0 0; 
-}
-
-.left2 .content2 .social2 a {
-    padding: 0 2px;
-    text-decoration: none;
-    color: #d9d9d9; 
-}
-
-.left2 .content2 .social2 a span {
-    height: 40px;
-    width: 40px;
-    background: #1a1a1a;
-    line-height: 40px;
-    text-align: center;
-    font-size: 18px;
-    border-radius: 5px;
-    transition: 0.3s; 
-}
-
-.left2 .content2 .social2 a span:hover {
-    background: #f12020; 
-}
-  
-.center2 .content2 .text2 {
-    font-size: 1.0625rem;
-    font-weight: 500;
-    padding-left: 10px; 
-}
-  
-.center2 .content2 .fa {
-    font-size: 1.4375rem;
-    background: #1a1a1a;
-    height: 45px;
-    width: 45px;
-    line-height: 45px;
-    text-align: center;
-    border-radius: 50%;
-    transition: 0.3s;
-    cursor: pointer; 
-}
-  
-.center2 .content2 .fa:hover {
-    background: #f12020; 
-}
-  
-.center2 .content2 .phone2 {
-    margin: 10px 0; 
-}
-  
-.right2 form .text2 {
-    font-size: 1.0625rem;
-    margin-bottom: 2px;
-    color: #656565; 
-}
-  
-.right2 form .msg2 {
-    margin-top: 10px; 
-}
-  
-.right2 form input, .right2 form textarea {
-    width: 100%;
-    font-size: 1.0625rem;
-    background: #151515;
-    padding-left: 10px;
-    border: 1px solid #222222; 
-}
-  
-.right2 form input:focus,
-.right2 form textarea:focus {
-    outline-color: #3498db; 
-}
-  
-.right2 form input {
-    height: 35px; 
-}
-  
-.right2 form .btn2 {
-    margin-top: 10px; 
-}
-  
-.right2 form .btn2 button {
-    height: 40px;
-    width: 100%;
-    border: none;
-    outline: none;
-    background: #f12020;
-    font-size: 1.0625rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: 0.3s; 
-}
-  
-.right2 form .btn2 button:hover {
-    background: #000; 
-    color: #fff;
-}
-  
-.bottom2 center {
-    padding: 5px;
-    font-size: 0.9375rem;
-    background: #151515; 
-}
-  
-.bottom2 center span {
-    color: #656565; 
-}
-  
-.bottom2 center a {
-    color: #f12020;
-    text-decoration: none; 
-}
-  
-.bottom2 center a:hover {
-    text-decoration: underline; 
-}
-  
-@media screen and (max-width: 767px) {
-    footer {
-        position: relative;
-        bottom: 0px; 
+    /* ------ SECCION FILTROS ------ */
+    .section-selections {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 30px 0 20px 0;
+    }
+    .filter button,
+    .category button {
+      width: 27vw;
+      margin-right: 15px;
+    }
+    .section-selections div,
+    .section-selections form {
+      margin: 0;
     }
 
-    .main-content2 {
-        flex-wrap: wrap;
-        flex-direction: column; 
+    /* Descktop */
+@media (min-width: 1200px) {
+    /* ------ HEADER ------ */
+    .logo-client {
+      margin-right: 50px;
     }
-    .main-content2 .box2 {
-        margin: 5px 0; 
-    } 
-
-}
+    .main-navbar {
+      justify-content: space-around;
+    }
+    .main-navbar a {
+      font-size: 24px;
+      margin: 0 30px;
+    }
+    .logo-client{
+      font-size: 23px;
+    }
+    /* ------ SECCION FILTROS ------ */
+    .filter button,
+    .category button,
+    form {
+      margin-right: 50px;
+      width: 23vw;
+    }
 
 /*==================================================
     PUNTOS DE QUIEBRES
@@ -796,6 +788,11 @@ footer {
 ==================================================*/
 
 @media (min-width: 481px) and (max-width: 768px){
+
+
+
+
+      
 
     /*  TITULOS  */
 
@@ -830,10 +827,10 @@ footer {
 
     /*  IMAGEN  */
 
-    .producto_imagen:before {
+    /* .producto_imagen:before {
         top: 140px;
         font-size: 1rem;
-    }
+    } */
 
     /*  DELIVERY  */
 
@@ -957,10 +954,10 @@ footer {
 
     /*  IMAGEN  */
 
-    .producto_imagen:before {
+    /* .producto_imagen:before {
         top: 140px;
         font-size: 1rem;
-    }
+    } */
 
     /*  CANTIDAD Y DESCRIPCION  */
 
@@ -1080,10 +1077,10 @@ footer {
 
     /*  IMAGEN  */
 
-    .producto_imagen:before {
+    /* .producto_imagen:before {
         top: 180px;
         font-size: 1.2rem;
-    }
+    } */
 
     /*  CANTIDAD Y DESCRIPCION  */
 
