@@ -1,17 +1,228 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Commerce Brainstorming</title>
-    <!-- Estilos del Home -->
-    <link rel="stylesheet" href="css/styles.css">
-    <!-- Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/439c181295.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    <h1><i class="fas fa-home"></i> Hola Mundo!!</h1>
-    <br/>
+    <header class="main-header">
+        <div class="container-top-header">
+            <div class="contact-header">
+                <a href="#" target="_blank" id="whatsapp"><i class="fab fa-whatsapp"></i>(351) 374 2005</a>
+                <ul class="social">
+                    <li><a href="#" target="_blank" id="twitter"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#" target="_blank" id="facebook"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#" target="_blank" id="instagram"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+                <!-- <img src="/img/logo-chico.png" alt="logo" class="logo"> -->
+            <div class="container-burger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div>
+                <a href="#" class="logo-client"><i class="fas fa-user"></i>SOY CLIENTE</a>
+                <a href="#" class="logo-bag">
+                    <!--<span class="items"><span class="items-count">0</span></span> -->
+                    <i class="fas fa-shopping-bag"></i>
+                </a>
+            </div>
+        </div>
+        <nav class="main-navbar">
+            <ul class="left-navbar">
+                <li><a href="#">PRODUCTOS</a></li>
+                <li><a href="#">NOSOTROS</a></li>
+                <li><a href="#">COMO COMPRAR</a></li>
+            </ul>
+            <ul class="right-navbar">
+                <li><a href="#">INSTRUCCIONES</a></li>
+                <li><a href="#">PREGUNTAS FRECUENTES</a></li>
+                <li><a href="#">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="section-selections">
+        <div class="filter">
+            <button>FILTRAR POR<i class="fas fa-list-ul"></i></button>
+            <!-- <ul class="dropdown-menu">
+                <li><a href="/bitter" class="">Bitter</a></li>
+                <li><a href="/cerveza" class="">Cerveza</a></li>
+                <li><a href="/fernet" class="">Fernet</a></li>
+                <li><a href="/gin" class="">Gin</a>
+                <li><a href="/ron" class="">Ron</a></li>
+                <li><a href="/vinos" class="">Vinos</a></li>
+                <li><a href="/vodka" class="">Vodka</a></li>
+                <li><a href="/whisky" class="">Whisky</a></li>
+            </ul> -->
+        </div>
+        <div class="category">
+            <button>CATEGORIAS<i class="fas fa-list-ul"></i></button>
+            <!-- <ul class="dropdown-menu">
+                <li><a href="/regaleria" class="">REGALERIA</a></li>
+                <li><a href="/cocktails" class="">Cocktails</a></li>
+                <li><a href="/tools" class="">Tools</a></li>
+            </ul> -->
+        </div>
+        <form action="#" method="POST">
+            <input type="text" name="search-input" class="search-input" placeholder="BUSCAR">
+            <span class="span-btn">
+                <button class="search-btn" type="submit"><i class="fas fa-search"></i></button>
+            </span>
+        </form>
+    </section>
+
+    <h1 class="main-title">VINOS</h1>
+
+    <main class="main-products">
+        <section>
+            <article class="card-product">
+                <img src="/img/products/vino-aduentusCabernet.jpg" alt="wine" />
+                <h3 class="title-product">ADUENTUS CABERNET FRANC</h3>
+                <div class="container-infoProd">
+                    <p class="price">$4.000</p>
+                    <input type="text" name="count" class="count" pattern="[0-9]" value="1" />
+                    <div class="icon-bag">
+                        <p>AGREGAR</p>
+                        <i class="fas fa-shopping-bag"></i>
+                    </div>
+                </div>
+            </article>
+            <article class="card-product">
+                <img src="/img/products/vino-unoMalbec.jpg" alt="wine" />
+                <h3 class="title-product">ANTIGAL UNO MALBEC</h3>
+                <div class="container-infoProd">
+                    <p class="price">$1.350</p>
+                    <input type="text" name="count" class="count" pattern="[0-9]" value="1" />
+                    <div class="icon-bag">
+                        <p>AGREGAR</p>
+                        <i class="fas fa-shopping-bag"></i>
+                    </div>
+                </div>
+            </article>
+            <article class="card-product">
+                <img src="/img/products/vino-unoSaivignon.jpg" alt="wine" />
+                <h3 class="title-product">ANTIGAL UNO CABERNET SAUVIGNON</h3>
+                <div class="container-infoProd">
+                    <p class="price">$1.350</p>
+                    <input type="text" name="count" class="count" pattern="[0-9]" value="1" />
+                    <div class="icon-bag">
+                        <p>AGREGAR</p>
+                        <i class="fas fa-shopping-bag"></i>
+                    </div>
+                </div>
+            </article>
+            <article class="card-product">
+                <img src="/img/products/vino-canevariEspumante.jpg" alt="wine" />
+                <h3 class="title-product">MILESIMATTO CANEVARI</h3>
+                <div class="container-infoProd">
+                    <p class="price">$4.250</p>
+                    <input type="text" name="count" class="count" pattern="[0-9]" value="1" />
+                    <div class="icon-bag">
+                        <p>AGREGAR</p>
+                        <i class="fas fa-shopping-bag"></i>
+                    </div>
+                </div>
+            </article>
+            <article class="card-product">
+                <img src="/img/products/gin-fifty.jpg" alt="gin" />
+                <h3 class="title-product">FIFTY POUNDS GYN</h3>
+                <div class="container-infoProd">
+                    <p class="price">$13.000</p>
+                    <input type="text" name="count" class="count" pattern="[0-9]" value="1" />
+                    <div class="icon-bag">
+                        <p>AGREGAR</p>
+                        <i class="fas fa-shopping-bag"></i>
+                    </div>
+                </div>
+            </article>
+            <article class="card-product">
+                <img src="/img/products/gin-nordes.jpg" alt="gin" />
+                <h3 class="title-product">NORDÉS</h3>
+                <div class="container-infoProd">
+                    <p class="price">$7.790</p>
+                    <input type="text" name="count" class="count" pattern="[0-9]" value="1" />
+                    <div class="icon-bag">
+                        <p>AGREGAR</p>
+                        <i class="fas fa-shopping-bag"></i>
+                    </div>
+                </div>
+            </article>
+            <article class="card-product">
+                <img src="/img/products/whisky-damore.jpg" alt="whisky" />
+                <h3 class="title-product">DALMORE 15 AÑOS</h3>
+                <div class="container-infoProd">
+                    <p class="price">$36.000</p>
+                    <input type="text" name="count" class="count" pattern="[0-9]" value="1" />
+                    <div class="icon-bag">
+                        <p>AGREGAR</p>
+                        <i class="fas fa-shopping-bag"></i>
+                    </div>
+                </div>
+            </article>
+            <article class="card-product">
+                <img src="/img/products/whisky-glenrothes.jpg" alt="whisky" />
+                <h3 class="title-product">THE GLENROTHES</h3>
+                <div class="container-infoProd">
+                    <p class="price">$34.900</p>
+                    <input type="text" name="count" class="count" pattern="[0-9]" value="1" />
+                    <div class="icon-bag">
+                        <p>AGREGAR</p>
+                        <i class="fas fa-shopping-bag"></i>
+                    </div>
+                </div>
+            </article>
+            <article class="card-product">
+                <img src="/img/products/lemoncello-pallini.jpg" alt="lemoncello" />
+                <h3 class="title-product">PALLINI LEMONCELLO</h3>
+                <div class="container-infoProd">
+                    <p class="price">$5.750</p>
+                    <input type="text" name="count" class="count" pattern="[0-9]" value="1" />
+                    <div class="icon-bag">
+                        <p>AGREGAR</p>
+                        <i class="fas fa-shopping-bag"></i>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <section class="container-footer">
+            <div class="clients-footer">
+                <h3>CLIENTES</h3>
+                <ul class="ul-clients">
+                    <li><a href="#"></a>Defensa del Consumidor</li>
+                    <li><a href="#"></a>Protección de datos personales</li>
+                </ul>
+            </div>
+            <div class="social-footer">
+                <h3>SEGUINOS</h3>
+                <ul class="ul-social">
+                    <li><a href="#" target="_blank" id="twitter"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#" target="_blank" id="facebook"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#" target="_blank" id="instagram"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+            <div class="contact-footer">
+                <a href="#" target="_blank" id="whatsapp"><i class="fab fa-whatsapp"></i>(351) 374 2005</a>
+            </div>
+        </section>
+
+        <div class="copy-footer">
+            <p>Brainstorming SRL</p>
+            <p>2021 © All rights reserved.</p>
+        </div>
+    </footer>
 </body>
+<footer>
+
+</footer>
+
 </html>
