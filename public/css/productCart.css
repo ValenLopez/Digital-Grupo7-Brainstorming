@@ -1,0 +1,915 @@
+/*==================================================
+    Tipografía
+==================================================*/
+
+@font-face {
+  font-family: "Bebas Neue";
+  font-style: regular;
+  src: url("/fonts/BebasNeue-Regular.ttf");
+}
+
+/*==================================================
+    Estilo Global
+==================================================*/
+
+* {
+  box-sizing: border-box;
+}
+
+/*==================================================
+    Estilo del Body
+==================================================*/
+
+body {
+  font-family: "Bebas Neue", cursive;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--grisMedio);
+  font-size: 29px;
+  margin: 10px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 39px;
+  color: var(--tinto);
+}
+
+h2 {
+  margin: 0;
+  font-size: 29px;
+  color: var(--tinto);
+}
+
+h3 {
+  margin: 0;
+  color: var(--tinto);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+span {
+  font-family: sans-serif;
+  font-size: 14px;
+  color: var(--grisMedio);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ------ HEADER ------ */
+.contact-header,
+.main-navbar {
+  display: none;
+}
+.main-header {
+  padding: 10px;
+  width: 100%;
+  height: 80px;
+  background-image: url("/img/wall/wall-violeta-2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.container-top-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+ul li {
+  list-style: none;
+}
+.logo-client {
+  margin-right: 10px;
+  font-size: 20px;
+  letter-spacing: 0.7px;
+  color: var(--blanco);
+}
+.logo-client i {
+  margin-right: 5px;
+  font-size: 20px;
+  margin-left: 25px;
+}
+.logo-bag i {
+  font-size: 25px;
+  color: var(--blanco);
+}
+.container-burger {
+  width: 0;
+}
+.container-burger i {
+  font-size: 28px;
+  color: var(--blanco);
+}
+
+/* ------ SECCION FILTROS ------ */
+.section-selections {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+.section-selections button,
+.section-selections input {
+  background-color: transparent;
+  color: #000000;
+  border: 2px solid #000000;
+  padding: 5px 16px;
+  font-family: "Bebas Neue", cursive;
+  font-size: 20px;
+}
+.section-selections div,
+.section-selections form {
+  margin-top: 15px;
+  font-size: 20px;
+}
+.filter button,
+.category button {
+  width: 85vw;
+  position: relative;
+}
+.filter i,
+.category i {
+  position: absolute;
+  right: 20px;
+}
+
+/*==================================================
+    Encabezado del carrito
+==================================================*/
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  margin: 0 15px;
+  margin-top: 50px;
+  justify-content: space-between;
+  /* align-items: center; */
+  /* border: 2px solid black; */
+}
+
+.order {
+  width: 100%;
+  /* border: 1px solid pink; */
+}
+
+.cart {
+  display: none;
+}
+
+.header-button {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  /* border: 1px solid blue; */
+  justify-content: flex-end;
+}
+
+.header-button button {
+  width: 70%;
+  height: 48px;
+  font-size: 17px;
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: normal;
+}
+
+/*** CAMBIO COLOR A BOTÓN GROW BOX ***/
+.ov-btn-grow-spin {
+  color: var(--tinto) !important; /* color de fuente */
+  border: 2px solid var(--tinto) !important; /* tamaño y color de borde */
+}
+
+.ov-btn-grow-spin:hover {
+  color: var(--blanco) !important; /* color de fuente hover */
+}
+
+.ov-btn-grow-spin::after {
+  background: var(--tinto) !important; /* color de fondo hover */
+}
+
+/*==================================================
+    ITEM DEL CARRITO
+==================================================*/
+
+.item-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 15px;
+  margin-top: 50px;
+  border-top: 1px dashed var(--tinto);
+  border-bottom: 1px dashed var(--tinto);
+}
+
+.item-image {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 100%;
+  height: 150px;
+  /* border: 1px solid violet; */
+  padding: 5px;
+}
+
+.item-image img {
+  object-fit: cover;
+}
+
+.item-description {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  /* border: 1px solid red; */
+  border-top: 1px dashed var(--tinto);
+  border-bottom: 1px dashed var(--tinto);
+}
+
+.description-title {
+  margin-top: 5px;
+  /* border: 1px solid orange; */
+}
+
+.description-title h3 {
+  margin: 5px;
+}
+
+.description-content {
+  margin-top: 5px;
+  /* border: 1px solid green; */
+}
+
+.description-content .description {
+  margin: 5px;
+}
+
+.item-price {
+  margin-bottom: 5px;
+  /* border: 1px solid brown; */
+  /* border-top: 1px dashed var(--tinto); */
+  border-bottom: 1px dashed var(--tinto);
+}
+
+.item-price span {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  margin: 5px;
+}
+
+.price {
+  margin-bottom: 5px;
+}
+
+.item-quantity {
+  margin-bottom: 5px;
+  /* border: 1px solid purple; */
+  border-bottom: 1px dashed var(--tinto);
+}
+
+.item-quantity span {
+  margin: 5px;
+}
+
+.quantity {
+  margin-bottom: 5px;
+}
+
+.item-subTotal {
+  margin-bottom: 5px;
+  /* border: 1px solid rgb(0, 65, 109); */
+  border-bottom: 1px dashed var(--tinto);
+}
+
+.item-subTotal h3 {
+  margin: 5px;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.item-delete {
+  margin-bottom: 5px;
+  /* border: 1px solid rgb(85, 109, 0); */
+  background-color: #f9f9f9;
+}
+
+.delete {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9;
+  height: 45px;
+}
+
+/*==================================================
+    TOOLTIP PARA ICONO ELIMINAR ITEM
+==================================================*/
+
+.item-delete {
+  position: relative;
+}
+
+.avatar {
+  transition: all 0.5s ease-in-out;
+}
+
+.avatar::before,
+.avatar::after {
+  --scale: 0;
+  --arrow-size: 10px;
+  --tooltip-color: var(--tinto);
+  --translate-y: -290%;
+
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%) translateY(var(--translate-y, 0))
+    scale(var(--scale));
+  transition: 150ms transform;
+  transform-origin: bottom center;
+}
+.avatar::before {
+  --translate-y: -260%;
+
+  content: attr(data-tooltip);
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 0.3rem;
+  text-align: center;
+  color: white;
+  padding: 10px;
+  width: max-content;
+  max-width: 100%;
+  background: var(--tooltip-color);
+}
+
+.avatar:hover {
+  color: var(--tinto);
+}
+
+.avatar:hover::before,
+.avatar:hover::after {
+  --scale: 1;
+}
+
+.avatar::after {
+  content: "";
+  border: var(--arrow-size) solid transparent;
+  border-top-color: var(--tooltip-color);
+}
+
+/*==================================================
+    TOTAL DEL CARRITO
+==================================================*/
+
+.total-container {
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  margin: 0 15px;
+  margin-top: 10px;
+  justify-content: space-between;
+  /* align-items: center; */
+  /* border: 2px solid black; */
+}
+
+.container-box-text {
+  width: 100%;
+  /* margin-top: 5px; */
+  border-bottom: 1px dashed var(--tinto);
+  /* border: 1px solid violet; */
+}
+
+.box-text {
+  width: 98%;
+  margin: 5px 0;
+  margin-left: 5px;
+}
+
+.container-box-total {
+  width: 100%;
+  /* border-bottom: 1px dashed var(--tinto); */
+}
+
+.box-total {
+  width: 98%;
+  margin: 5px 0;
+  margin-left: 5px;
+}
+
+.container-box-clear {
+  display: none;
+  /* border: 1px solid red; */
+}
+
+/*==================================================
+    BOTONES DE CONFIRMACION
+==================================================*/
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  margin: 0 15px;
+  /* margin-top: 10px; */
+  margin-bottom: 60px;
+  justify-content: space-between;
+  /* align-items: center; */
+  border-top: 2px solid #ccc;
+}
+
+.button-product {
+  margin-top: 10px;
+  height: 50px;
+  /* border: 1px solid blue; */
+}
+.button-product button {
+  width: 100%;
+  height: 48px;
+  font-size: 17px;
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: normal;
+}
+
+.button-buy {
+  margin-top: 10px;
+  height: 50px;
+  /* border: 1px solid orange; */
+}
+
+.button-buy button {
+  width: 100%;
+  height: 48px;
+  font-size: 17px;
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: normal;
+}
+
+/*** CAMBIO COLOR A BOTÓN GROW BOX ***/
+.ov-btn-grow-box {
+  background: #fff !important; /* color de fondo */
+  color: var(--tinto) !important; /* color de fuente */
+  border: 2px solid var(--tinto) !important; /* tamaño y color de borde */
+}
+.ov-btn-grow-box:hover {
+  color: #fff !important; /* color de fuente hover */
+}
+.ov-btn-grow-box::after {
+  background: var(--tinto) !important; /* color de fondo hover */
+}
+
+/*** CAMBIO COLOR A BOTÓN SLIDE CLOSE ***/
+.ov-btn-slide-close {
+  background: #fff !important; /* color de fondo */
+  color: var(--tinto) !important; /* color de fuente */
+  border: 2px solid var(--tinto) !important; /* tamaño y color de borde */
+}
+.ov-btn-slide-close:before,
+.ov-btn-slide-close:after {
+  background-color: var(--tinto) !important; /* color de fondo hover */
+}
+.ov-btn-slide-close:hover {
+  color: #fff !important; /* color de fuente hover */
+}
+
+/*================================================
+FOOTER
+================================================*/
+/* ------ FOOTER ------ */
+footer {
+    width: 100%;
+    margin: auto;
+    padding: 0 15px;
+    background-color: #e6d3ca;
+  }
+  .container-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 20px;
+    align-items: baseline;
+  }
+  footer h3 {
+    font-size: 15px;
+    color: black;
+  }
+  footer a {
+    text-decoration: none;
+    color: black;
+  }
+  .ul-clients {
+    font-size: 11px;
+    padding: 0;
+  }
+  .ul-social {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    padding: 0;
+  }
+  .contact-footer {
+    font-size: 15px;
+    height: 0;
+  }
+  .contact-footer i {
+    margin-right: 5px;
+  }
+  .copy-footer {
+    text-align: right;
+  }
+  .copy-footer p {
+    font-size: 10px;
+  }
+  
+
+/*==================================================
+    PUNTOS DE QUIEBRES
+==================================================*/
+
+/*==================================================
+    TABLET
+==================================================*/
+
+@media (min-width: 768px) {
+  /* HEADER */
+  .main-header {
+    height: 110px;
+    padding: 15px 10px;
+  }
+  .container-burger {
+    display: none;
+  }
+  .main-header a {
+    color: var(--blanco);
+  }
+  .container-top-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0 20px;
+  }
+  .contact-header,
+  .main-navbar {
+    display: flex;
+  }
+  #whatsapp {
+    font-size: 21px;
+    margin-right: 30px;
+  }
+  .contact-header i {
+    font-size: 21px;
+    margin-right: 15px;
+  }
+  .social {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+  .social li {
+    margin-right: 10px;
+  }
+  .logo-client {
+    margin-right: 20px;
+  }
+  .logo-client i {
+    margin-right: 10px;
+    font-size: 22px;
+  }
+  .logo-bag {
+    margin-right: 12px;
+  }
+  .main-navbar {
+    justify-content: space-between;
+    padding-top: 25px;
+    position: absolute;
+    top: 38px;
+  }
+  .main-navbar a {
+    font-size: 18px;
+    margin: 0px 15px;
+  }
+  .left-navbar,
+  .right-navbar {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  /*  ENCABEZADO  */
+
+  .header-container {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 740px;
+    margin: auto;
+    margin-top: 40px;
+  }
+
+  .order {
+    width: 30%;
+  }
+
+  .cart {
+    display: block;
+    width: 35%;
+    /* border: 1px solid yellow; */
+    text-align: center;
+    margin: auto;
+  }
+
+  .header-button {
+    width: 35%;
+  }
+
+  .header-button button {
+    width: 100%;
+  }
+  /* ------ SECCION FILTROS ------ */
+  .section-selections {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px 0 20px 0;
+  }
+  .filter button,
+  .category button {
+    width: 27vw;
+    margin-right: 15px;
+  }
+  .section-selections div,
+  .section-selections form {
+    margin: 0;
+  }
+
+  /* ITEM CARRITO */
+
+  .item-container {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 740px;
+    margin: auto;
+    margin-top: 40px;
+  }
+
+  .item-image {
+    width: 200px;
+  }
+
+  .item-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 200px;
+    height: 150px;
+    border-top: none;
+    border-bottom: none;
+  }
+
+  .description-title {
+    margin-top: 10px;
+  }
+
+  .description-content {
+    margin-bottom: 10px;
+  }
+
+  .item-price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5px;
+    height: 150px;
+    border-bottom: none;
+  }
+
+  .price {
+    margin-bottom: 0;
+  }
+
+  .item-quantity {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5px;
+    height: 150px;
+    border-bottom: none;
+  }
+
+  .quantity {
+    margin-bottom: 0;
+  }
+
+  .item-subTotal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5px;
+    height: 150px;
+    border-bottom: none;
+  }
+
+  .item-delete {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5px;
+    height: 150px;
+  }
+
+  /* TOOLTIP BORRAR ITEMS */
+
+  .avatar::before,
+  .avatar::after {
+    --translate-y: -20%;
+    transform: translateX(-50%) translateY(var(--translate-y, 0))
+      scale(var(--scale));
+    transition: 150ms transform;
+    transform-origin: bottom center;
+  }
+  .avatar::before {
+    --translate-y: -100%;
+  }
+
+  /* TOTAL CARITO */
+
+  .total-container {
+    display: flex;
+    flex-direction: row;
+    /* justify-content:space-between; */
+    width: 740px;
+    margin: auto;
+    margin-top: 5px;
+  }
+
+  .container-box-text {
+    margin-top: 0;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: none;
+  }
+
+  .box-text {
+    text-align: right;
+    /* border: 1px solid grey; */
+  }
+
+  .container-box-total {
+    width: 14%;
+  }
+
+  .container-box-clear {
+    display: block;
+    width: 6%;
+  }
+
+  .buttons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 740px;
+    margin: auto;
+    margin-top: 5px;
+  }
+
+  .container-button {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .container-footer {
+    justify-content: space-around;
+    height: 70px;
+  }
+  footer h3 {
+    font-size: 17px;
+    letter-spacing: 1.5px;
+  }
+  .ul-clients {
+    font-size: 12px;
+  }
+  .ul-clients li {
+    padding: 3px 0;
+  }
+  .ul-social {
+    padding-top: 6px;
+  }
+  .ul-social li {
+    margin-right: 10px;
+  }
+  .copy-footer p {
+    font-size: 11px;
+  }
+  .contact-footer a {
+    font-size: 20px;
+    margin-right: 15px;
+    /*   font-size: 15px;
+  height: 0; */
+  }
+  .contact-footer #whatsapp {
+    font-size: 18px;
+  }
+}
+
+/*==================================================
+    LAPTOP  
+==================================================*/
+
+@media (min-width: 1024px) {
+  /* ------ HEADER ------ */
+  .logo-client {
+    margin-right: 50px;
+  }
+  .main-navbar {
+    justify-content: space-around;
+    position: absolute;
+    top: 32px;
+    margin-left: 110px;
+  }
+  .main-navbar a {
+    font-size: 24px;
+    margin: 0 30px;
+  }
+  .logo-client {
+    font-size: 23px;
+  }
+  /*  ENCABEZADO  */
+
+  .header-container {
+    width: 840px;
+  }
+
+  /* FILTROS */
+  .filter button,
+  .category button,
+  form {
+    margin-right: 50px;
+    width: 23vw;
+  }
+  /* ITEM CARRITO */
+
+  .item-container {
+    width: 840px;
+  }
+
+  .item-description {
+    width: 40%;
+  }
+
+  .description-title {
+    margin-top: 20px;
+  }
+
+  .description-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+  }
+
+  .description {
+    height: 60%;
+  }
+
+  /* TOTAL CARITO */
+
+  .total-container {
+    width: 840px;
+  }
+
+  /* CONTENIDO DE BOTONES CONFIRMACION */
+
+  .buttons-container {
+    width: 840px;
+  }
+  /* ------ FOOTER ------ */
+  footer h3 {
+    font-size: 20px;
+    letter-spacing: 2.5px;
+  }
+  .ul-clients {
+    font-size: 15px;
+  }
+  .ul-clients li {
+    padding: 3px 0;
+  }
+  .ul-social li {
+    margin-right: 16px;
+  }
+  .contact-footer a {
+    font-size: 20px;
+    margin: 0;
+  }
+  .copy-footer p {
+    font-size: 15px;
+  }
+}
