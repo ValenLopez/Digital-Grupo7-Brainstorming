@@ -2,11 +2,11 @@
     Tipografía
 ==================================================*/
 
-@font-face {
+/* @font-face {
   font-family: "Bebas Neue";
   font-style: regular;
   src: url("/fonts/BebasNeue-Regular.ttf");
-}
+} */
 
 /*==================================================
     Estilo Global
@@ -177,9 +177,7 @@ ul li {
   width: 70%;
   height: 48px;
   font-size: 17px;
-  font-family: "Bebas Neue";
-  font-style: normal;
-  font-weight: normal;
+  font-family:var(--fontBody);
 }
 
 /*** CAMBIO COLOR A BOTÓN GROW BOX ***/
@@ -256,9 +254,7 @@ ul li {
 }
 
 .item-price span {
-  font-family: "Bebas Neue";
-  font-style: normal;
-  font-weight: normal;
+  font-family: var(--fontBody);
   font-size: 17px;
   margin: 5px;
 }
@@ -289,8 +285,6 @@ ul li {
 
 .item-subTotal h3 {
   margin: 5px;
-  font-style: normal;
-  font-weight: normal;
 }
 
 .item-delete {
@@ -434,9 +428,7 @@ ul li {
   width: 100%;
   height: 48px;
   font-size: 17px;
-  font-family: "Bebas Neue";
-  font-style: normal;
-  font-weight: normal;
+  font-family:var(--fontBody);
 }
 
 .button-buy {
@@ -449,9 +441,7 @@ ul li {
   width: 100%;
   height: 48px;
   font-size: 17px;
-  font-family: "Bebas Neue";
-  font-style: normal;
-  font-weight: normal;
+  font-family:var(--fontBody);
 }
 
 /*** CAMBIO COLOR A BOTÓN GROW BOX ***/

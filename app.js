@@ -20,7 +20,7 @@ app.set('views', './views');
 app.set('views engine', 'html')
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '/views/index.html'));
+    res.sendFile(path.join(__dirname, '/views/home.html'));
 });
 
 app.get('/register', (req, res) => {
