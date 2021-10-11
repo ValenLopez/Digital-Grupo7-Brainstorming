@@ -314,10 +314,11 @@ footer a {
   .main-title {
     padding: 5px 0;
     margin-top: 0px;
+    margin-bottom: 20px;
   }
   /* ------ CARDS DE PRODUCTOS ------ */
   .card-product {
-    width: 30%;
+    width: 22%;
   }
   .title-product {
     font-size: 22px;
