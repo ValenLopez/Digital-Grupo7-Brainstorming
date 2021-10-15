@@ -1,30 +1,22 @@
 const express = require('express');
+const path = require('path')
 const app = express();
-const path = require('path');
+const mainRouter = require('./routes/main')
+const productsRouter = require('./routes/products')
+const usersRouter = require('./routes/users')
+
+// Establecer vistas
+app.set('view engine', 'ejs')
+app.set('views', path.join(__dirname, '/views'))
 
 // Archivos Estaticos
 app.use(express.static('public'));
 
-// Establecer vistas
-app.set('views', './views');
-app.set('views engine', 'html')
 
-app.get('/', (req, res) => res.sendFile(path.join(__dirname, './views/products/home.html')));
-app.get('/register', (req, res) => res.sendFile(path.join(__dirname, './views/users/register.html')));
-app.get('/login', (req, res) => res.sendFile(path.join(__dirname, './views/users/login.html')));
-app.get('/productDetail', (req, res) => res.sendFile(path.join(__dirname, './views/products/productDetail.html')));
-app.get('/productCart', (req, res) => res.sendFile(path.join(__dirname, './views/products/productCart.html')));
+// Routing
+app.use('/', mainRouter)
+app.use('/products', productsRouter)
+app.use('/users', usersRouter)
 
 
-app.listen(3080, () =>console.log("Levantando un servidor con Express en ", "http://localhost:3080"))
-
-
-
-
-
-
-
-/* app.use('/css', express.static(__dirname + '/public/css'));
-app.use('/fonts', express.static(__dirname + '/public/fonts'));
-app.use('/js', express.static(__dirname + '/public/js'));
-app.use('/img', express.static(__dirname + '/public/img')); */
+app.listen(3000, () => console.log("Levantando un servidor con Express en", "http://localhost:3000"))
