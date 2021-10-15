@@ -1,7 +1,7 @@
 
 # Digital-Grupo7-Brainstorming
 
-**“_Brainstorming_”**es un sitio web dedicado a la comercialización de bebidas alcohólicas de alta gama, principalmente vinos.
+**_Brainstorming_**es un sitio web dedicado a la comercialización de bebidas alcohólicas de alta gama, principalmente vinos.
 La venta de los productos se efectúa desde la página, mediante la apertura de una cuenta como “Cliente” seguido de la compra virtual de los artículos seleccionados y agregados al carrito, los cuales serán entregados por delivery al domicilio de referencia brindado por el cliente.
 La empresa tiene como nicho objetivo de clientes a la comunidad, mayor de 18 años, que sienta una inmensa pasión por el gusto de descubrir nuevas y variadas etiquetas de calidad.
 Las bebidas alcohólicas ofrecidas son Vinos, Gin, Whisky, entre otros.
